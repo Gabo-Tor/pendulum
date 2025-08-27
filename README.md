@@ -2,6 +2,8 @@
 
 A robot designed for reinforcement learning and control experiments with real hardware.
 
+![Video](img/video.gif)
+
 # Repository Map
 
 * **train.py**: training script for the robot.
