@@ -28,13 +28,17 @@ A robot designed for reinforcement learning and control experiments with real ha
 | 623z                                      | Bearing.                                                                                                                                                    |
 | Flexible 4-wire cable                     | Electrical connection.                                                                                                                                      |
 | Wooden or cardboard base                  | Base, approximately 120 × 100 mm.                                                                                                                           |
+| Counterweight                              | It has to still fall when left alone, but helps the actuator lift the pendulum. A M6 bolt, washer and nut was used in our case.                                                                              |
 
 ### Assembly
 
 * Connect the VCC pins of the MG996R and AS5600 to the 3.3 V pin on the ESP32.
-* Connect all GND pins together, and wire the signal pins to the appropriate GPIOs on the ESP32 (as specified in *firmware.ino*).
+* Connect all GND pins together, and w
+* Connect the signal pins to the appropriate GPIOs on the ESP32 (as specified in *firmware.ino*).
 * Glue the encoder magnet to the end of the screw that acts as the shaft.
 * Some boards may require a small amount of glue to remain securely in place.
+
+![Assembled Robot](img/robot.jpg)
 
 ## Firmware
 
@@ -64,7 +68,7 @@ Upload the firmware to the ESP32 using the Arduino IDE.
 
 ## History Wrapper
 
-A history wrapper is used to maintain the last three observations and actions taken by the agent.
+A history wrapper is used to maintain the last observations and actions taken by the agent.
 This provides the agent with short-term memory and context, effectively restoring the Markov property of the environment. This is necessary because certain state variables (such as \$\dot{\theta}\$ or the propeller speed) are not directly observable from a single timestep.
 
 ## State-Space Representation
