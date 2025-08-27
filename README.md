@@ -87,6 +87,6 @@ $$
 \dot{\mathbf{x}} =
 \begin{bmatrix}
 \dot\theta \\
-\displaystyle \frac{1}{J}\Big( l\,c_T\,\omega_p^2 - m g l \sin\theta - b\,\dot\theta \Big)
-\end{bmatrix}.
+\displaystyle \frac{1}{J}\Big( lc_T\omega_p^2 - m g l \sin\theta - b\dot\theta \Big)
+\end{bmatrix}
 $$
