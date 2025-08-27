@@ -86,7 +86,7 @@ Dynamics:
 $$
 \dot{\mathbf{x}} =
 \begin{bmatrix}
-\dot\theta \\[6pt]
+\dot\theta \\
 \displaystyle \frac{1}{J}\Big( l\,c_T\,\omega_p^2 \;-\; m g l \sin\theta \;-\; b\,\dot\theta \Big)
 \end{bmatrix}.
 $$
